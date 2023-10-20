@@ -116,12 +116,13 @@ button, .button {
     border-radius: 10px;
     margin: 0px 20px 0px 20px;
     padding: 10px 10px 10px 10px;
+    max-width: 310px;
 }
 
 #img-grid{
   align-items: center;
   text-align: center;
   justify-content: center;
-  max-width: 310px;
+  max-width: none;
 }
 
