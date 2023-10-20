@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <link rel="stylesheet" href="styles.css">
     <title>Axon Terminal</title>
@@ -21,19 +20,35 @@
       
       <p>Axon is a command line with a built in AI assistant. </br>
       Key features include:</p>
-      <ul> 
-        <li>Provides a description of each command you run</li>
-        <li>Chatbot that caters to both general research inquiries and specific support needs</li>
-        <li>Copilot that execute python code to perform various tasks on your system given plaintext instructions</li>
-      </ul>
-
+      <div class = "grid-container">
+        <div class = "grid-element" id = "img-grid">
+          <img class = "gridimg" src = "img1.png"> </img> </br> 
+          Provides a description of each command you run
+        </div>
+        <div class = "grid-element" id = "img-grid">
+          <img class = "gridimg" src = "img2.png"> </img> </br>
+          Chatbot that caters to both general research inquiries and specific support needs
+        </div>
+        <div class = "grid-element" id = "img-grid">
+          <img class = "gridimg" src = "img3.png"> </img> </br>
+          Copilot that execute python code to perform various tasks on your system given plaintext instructions
+        </div>
+      </div>
     </section>
 
     <section>
       <h2>Why use Axon?</h2>
-      <p><strong>Be more accurate. </strong> Axon informs users when executing potentially dangerous instructions. You always know what you are running, preventing risks to system integrity and data. </br>
-        <strong>Built-in Search Engine.</strong> No need to search through Google and Stack Overflow when you can ask questions as you work. </br>
-        <strong>Save time.</strong> No more wasting time reading through documentation, setting up environments, or installing packages. Simply tell Axon what you need to do! </br>
+      <div class = "grid-container">
+        <div class = "grid-element">
+          <strong>Be more accurate. </strong> Axon informs users when executing potentially dangerous instructions. You always know what you are running, preventing risks to system integrity and data. </br>
+        </div>
+        <div class = "grid-element">
+          <strong>Built-in Search Engine.</strong> No need to search through Google and Stack Overflow when you can ask questions as you work. </br>
+        </div>
+        <div class = "grid-element">
+          <strong>Save time.</strong> No more wasting time reading through documentation, setting up environments, or installing packages. Simply tell Axon what you need to do! </br>
+        </div>
+      </div>
       <img id = "screenshot" src="screenshot.png">
 
     </section>
@@ -43,7 +58,7 @@
       <p> Axon is currently in Alpha release as a ZSH plugin for <a href = "https://ohmyz.sh/">oh-my-zsh.</a> To request an API key, contact email@example.com. Visit <a href = "https://github.com/nik875/axon-terminal">the GitHub page</a> for installation instructions.</p>
 
     <footer>
-      <img id = "logofooter" src = "logo.png">
+      <img id = "logofooter" src = "nbslogo.png">
       <span>Neural BioSystems 2023 &emsp; <a href = "https://github.com/nik875/axon-terminal"> Github </a> </span> </footer>
   </body>
 
