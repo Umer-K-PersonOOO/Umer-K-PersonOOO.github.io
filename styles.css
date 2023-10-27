@@ -44,6 +44,11 @@ header, footer{
   text-align: center;
 }
 
+.main_point {
+  background-color: var(--primary-color);
+  color: white;
+}
+
 /* Layout */
 header, nav, footer {
   padding: 20px;
@@ -63,6 +68,12 @@ h2, p, ul {
   margin-left: 80px;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* Links */
 a {
   color: var(--secondary-color);
@@ -77,6 +88,14 @@ button, .button {
 }
 
 /* Other */
+#company_logo {
+  max-height: 35px;
+}
+
+.navbar_link {
+  margin-right: 10px;
+}
+
 #logo {
   max-height: 35px;
   margin-right: 20px;
@@ -124,5 +143,12 @@ button, .button {
   text-align: center;
   justify-content: center;
   max-width: none;
+}
+
+.main_point {
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 48px;
 }
 
