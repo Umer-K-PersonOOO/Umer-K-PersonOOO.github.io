@@ -33,12 +33,22 @@ h3 {
 p, ul{
   font-size: 20px;
 }
+.divider {
+  color: white;
+  border: none;
+  margin: none;
+  padding: 8px;
+  background-color: black;
+}
 
 /* Colors */
 :root {
   --primary-color: #2D358B;
   --secondary-color: #D98F17;
-  --text-color: #333;
+  --text-color: #000;
+  --text-color2: #333;
+  --alnleft-bg: #5D7487;
+  --alnright-bg: #F4ECD6;
 }
 
 body {
@@ -67,7 +77,7 @@ header, footer{
 }
 
 .main_point_alt {
-  background-color: var(--secondary-color);
+  background-color: #FFCF67;
   color: var(--text-color);
   padding: .5%;
 }
@@ -109,12 +119,18 @@ button, .button {
   padding: 8%;
   display: grid;
   grid-template-columns: 30% 70%;
-  background-color: gray;
+  background-color: var(--alnleft-bg);
+  color: var(--text-color);
   text-align: left;
 }
 
 .sect_head_alnleft {
   text-align: left;
+}
+
+.text_alnleft_rightbox, .text_alnright_leftbox {
+  width: 40%;
+  font-size: 24px;
 }
 
 .alnleft_rightbox {
@@ -128,7 +144,7 @@ button, .button {
   text-align: right;
   display: grid;
   grid-template-columns: 70% 30%;
-  background-color: lightgray;
+  background-color: var(--alnright-bg);
 }
 
 .alnright_leftbox {
@@ -141,7 +157,7 @@ button, .button {
   text-align: right;
 }
 
-.half_split_sect {
+.half_split_sect, .third_split_sect {
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 1%;
@@ -149,12 +165,12 @@ button, .button {
   display: grid;
   grid-template-columns: 50% 50%;
   background-color: white;
-  text-align: justify;
+  text-align: center;
   background-color: lightgray;
 }
 
-.half_split_box {
-  text-align: center;
+.third_split_sect {
+  grid-template-columns: 33% 33% 33%;
 }
 
 #company_logo {
