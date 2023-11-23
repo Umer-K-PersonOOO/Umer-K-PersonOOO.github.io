@@ -2,12 +2,12 @@ interface Props {
   text: string;
   name: string;
   alt?: string;
+  handleClick: Function;
 }
 
 const defaultProps = {
   alt: "Image",
 };
-
 function LeftText(propsIn: Props) {
   const props = { ...defaultProps, ...propsIn };
   return (
@@ -21,6 +21,9 @@ function LeftText(propsIn: Props) {
           className=" overflow-x-hidden overflow-y-visible object-scale-down px-6 py-2 transform transition-transform duration-300 scale-75 hover:scale-125"
           src={`../static/${props.name}`}
           alt={props.alt}
+          onClick={() => {
+            props.handleClick(props.name);
+          }}
         />
       </div>
     </div>
