@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 interface Props {
   img: string;
   turnOff: Function;
+  //
 }
 function ImagePopup({ img, turnOff }: Props) {
   if (img === "") return null;
