@@ -3,11 +3,11 @@ import RightText from "./RightText";
 import Title from "./Title";
 import ImagePopup from "./ImagePopup";
 import { useState } from "react";
+import TypewritterTitle from "./TypewritterTitle";
 
 function HomePage() {
   const [imgUrl, setUrl] = useState<string>("");
-  const [isOn, setIsOn] = useState(false);
-  const handleClose = () => setUrl("");
+  const [tTitleseen, setTTitleSeen] = useState(false);
   return (
     <div>
       <Title />
@@ -25,6 +25,7 @@ function HomePage() {
         handleClick={setUrl}
       />
       <ImagePopup img={imgUrl} turnOff={setUrl} />
+      <TypewritterTitle seen={tTitleseen} setSeen={setTTitleSeen} />
     </div>
   );
 }
