@@ -26,6 +26,12 @@ function HomePage() {
       />
       <ImagePopup img={imgUrl} turnOff={setUrl} />
       <TypewritterTitle seen={tTitleseen} setSeen={setTTitleSeen} />
+      <LeftText
+        text="Validates your commands to catch your mistakes"
+        name="nbslogo.png"
+        alt="Screenshot"
+        handleClick={setUrl}
+      />
     </div>
   );
 }

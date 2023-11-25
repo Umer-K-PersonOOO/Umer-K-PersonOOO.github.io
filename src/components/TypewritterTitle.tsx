@@ -51,7 +51,7 @@ function TypewritterTitle({ seen, setSeen }: Props) {
 
   return (
     <div ref={titleRef} className="bg-black py-40">
-      <p className={`text-8xl font-bold text-center text-white`}>
+      <p className={`text-8xl font-mono text-center text-white`}>
         <span
           className={` px-2 ${
             text.length === title.length
@@ -62,7 +62,6 @@ function TypewritterTitle({ seen, setSeen }: Props) {
           {text}
         </span>
       </p>
-      {/* <div className="rounded bg-slate-600 w-1 py-10 ml-1 mt-1"></div> */}
     </div>
   );
 }
