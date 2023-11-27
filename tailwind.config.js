@@ -4,6 +4,15 @@ module.exports = {
   // purge: ['./src/**/*.{js,jsx}', './public/index.html'],
   theme: {
     extend: {
+      colors: {
+      "cat-dark": "#333333",
+      "cat-light": "#f5f5f5",
+      "cat-white": "#fafafa",
+      "cat-night-header": "#010409",
+      "cat-night-background": "#0e1117",
+      "cat-night-button": "#22262d" ,
+      "cat-night-white": "#e7edf3"
+    },
       keyframes: {
         wiggle: {
           '0%, 100%': { transform: 'rotate(-3deg)' },

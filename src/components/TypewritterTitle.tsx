@@ -50,7 +50,7 @@ function TypewritterTitle({ seen, setSeen }: Props) {
   }, [seen]);
 
   return (
-    <div ref={titleRef} className="bg-black py-40">
+    <div ref={titleRef} className="bg-cat-night-header py-40">
       <p className={`text-8xl font-mono text-center text-white`}>
         <span
           className={` px-2 ${

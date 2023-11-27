@@ -4,21 +4,23 @@ interface Props {
   alt?: string;
   handleClick: Function;
   bgColor?: string;
+  textColor?: string;
 }
 
 const defaultProps = {
   alt: "Image",
   bgColor: "amber-50",
+  textColor: "black",
 };
 function LeftText(propsIn: Props) {
   const props = { ...defaultProps, ...propsIn };
   return (
     <div
-      className={`bg-${props.bgColor} py-3 flex flex-row overflow-y-visible overflow-x-clip items-center`}
+      className={`py-3 bg-${props.bgColor} flex flex-row overflow-y-visible overflow-x-clip items-center`}
     >
       <div className="shrink basis-[2.7777777777%]"></div>
       <div className="basis-[63.8888888888%]">
-        <p className="">{props.text}</p>
+        <p className={` text-${props.textColor} `}>{props.text}</p>
       </div>
       <div className="basis-1/3">
         <img
