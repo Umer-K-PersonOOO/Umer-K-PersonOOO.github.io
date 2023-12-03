@@ -1,17 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import HomePage from "./components/HomePage";
+import reportWebVitals from "./reportWebVitals";
+import { Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+
 import App from "./components/HomePage";
 import Navbar from "./components/Navbar";
-import reportWebVitals from "./reportWebVitals";
+import ContactPage from "./components/ContactPage";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Navbar />
-    <App />
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/contact-us" element={<ContactPage />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

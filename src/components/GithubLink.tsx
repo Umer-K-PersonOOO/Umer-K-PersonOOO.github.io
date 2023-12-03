@@ -1,5 +1,4 @@
 import React from "react";
-
 const GithubLink = () => {
   const githubRepoLink = "https://github.com/nik875/axon-terminal";
 

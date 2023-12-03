@@ -1,8 +1,11 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 function NavbarEntries() {
   return (
     <div className="flex">
       <div className="flex-1 border-r border-gray-300 bg-slate-300 text-center py-12 ">
-        Meet Axon
+        <Link to={"/"}>Meet Axon</Link>
       </div>
       <div className="flex-1  border-r border-gray-300 bg-slate-300 text-center py-12 ">
         Announcement
@@ -13,7 +16,9 @@ function NavbarEntries() {
       <div className="flex-1  border-r border-gray-300 bg-slate-300 text-center py-12 ">
         Axon API
       </div>
-      <div className="flex-1 bg-slate-300 text-center py-12 ">Contact Us</div>
+      <div className="flex-1 bg-slate-300 text-center py-12 ">
+        <Link to={"/contact-us"}>Contact Us</Link>
+      </div>
     </div>
   );
 }
