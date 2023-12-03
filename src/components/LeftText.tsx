@@ -25,7 +25,7 @@ function LeftText(propsIn: Props) {
       </div>
       <div className="basis-1/3">
         <img
-          className=" overflow-x-hidden overflow-y-visible object-scale-down px-6 py-2 transform transition-transform duration-300 scale-75 hover:scale-125"
+          className=" overflow-x-hidden overflow-y-visible object-scale-down px-6 py-2 transform transition-transform duration-300 scale-75 hover:scale-100"
           src={`../static/${props.name}`}
           alt={props.alt}
           onClick={() => {

@@ -1,4 +1,4 @@
-// Items may not be vertically aligned: check to see if it is:
+// Items may not be vertically aligned: check to see if it is: className=" flex items-center"
 function PlannedFeatures() {
   return (
     <div className={` bg-slate-600 grid grid-cols-4 py-20`}>

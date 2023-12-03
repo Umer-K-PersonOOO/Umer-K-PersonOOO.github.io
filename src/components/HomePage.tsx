@@ -10,6 +10,9 @@ import PlannedFeatures from "./PlannedFeatures";
 import AETitle from "./AETitle";
 import AEPlannedFeatures from "./AEPlannedFeatures";
 import AEText from "./AEText";
+import AxonTitle from "./AxonTitle";
+import VoteText from "./VoteText";
+import Footer from "./Footer";
 
 function HomePage() {
   const [imgUrl, setUrl] = useState<string>("");
@@ -20,7 +23,7 @@ function HomePage() {
       <Title />
       <LeftText
         text="A personal AI assisstant designed to simplify and accelerate your
-          reasearch, data analysis, and programming"
+          reasearch, data analysis, and programming."
         name="nbslogo.png"
         alt="Microchip Diagram"
         handleClick={setUrl}
@@ -29,7 +32,7 @@ function HomePage() {
       <ImagePopup img={imgUrl} turnOff={setUrl} />
       <TypewritterTitle seen={tTitleseen} setSeen={setTTitleSeen} />
       <LeftText
-        text="Validates your commands to catch your mistakes"
+        text="Validates your commands to catch your mistakes."
         name="nbslogo.png"
         alt="Screenshot"
         bgColor="cat-night-background"
@@ -37,7 +40,7 @@ function HomePage() {
         handleClick={setUrl}
       />
       <RightText
-        text="||||| with you for reasearch help, tech support, and debugging assistance"
+        text="||||| with you for reasearch help, tech support, and debugging assistance."
         name="nbslogo.png"
         bgColor="cat-night-background"
         alt="Screenshot"
@@ -45,7 +48,7 @@ function HomePage() {
         handleClick={setUrl}
       />
       <LeftText
-        text="Performes natural language tasks by generating Python code"
+        text="Performes natural language tasks by generating Python code."
         name="nbslogo.png"
         bgColor="cat-night-background"
         textColor="cat-night-white"
@@ -57,6 +60,37 @@ function HomePage() {
       <AETitle />
       <AEText />
       <AEPlannedFeatures />
+      <AxonTitle />
+      <LeftText
+        text="Putting the powr of Axon into the hands of scienctists and developers around the world."
+        name="nbslogo.png"
+        alt="Microchip Diagram"
+        handleClick={setUrl}
+      />
+      <RightText
+        text="Develop your own apps that leverage Axon's full suite of services."
+        name="nbslogo.png"
+        bgColor="cat-night-background"
+        alt="Screenshot"
+        textColor="cat-night-white"
+        handleClick={setUrl}
+      />
+      <LeftText
+        text="Supporting a thriving open source community with free access of API services and Axon-Powered apps for anyone with an Axon license."
+        name="nbslogo.png"
+        alt="Microchip Diagram"
+        handleClick={setUrl}
+      />
+      <RightText
+        text="Connecting software developers and companies with global reasearch labs in the Axon Marketplace. "
+        name="nbslogo.png"
+        bgColor="cat-night-background"
+        alt="Screenshot"
+        textColor="cat-night-white"
+        handleClick={setUrl}
+      />
+      <VoteText />
+      <Footer />
     </div>
   );
 }
