@@ -5,10 +5,14 @@ import ImagePopup from "./ImagePopup";
 import GithubLink from "./GithubLink";
 import { useState } from "react";
 import TypewritterTitle from "./TypewritterTitle";
+import RightItalized from "./RightItalized";
+import PlannedFeatures from "./PlannedFeatures";
+import AETitle from "./AETitle";
 
 function HomePage() {
   const [imgUrl, setUrl] = useState<string>("");
   const [tTitleseen, setTTitleSeen] = useState(false);
+  const [aETitleseen, setAETitleSeen] = useState(false);
   return (
     <div>
       <Title />
@@ -19,12 +23,7 @@ function HomePage() {
         alt="Microchip Diagram"
         handleClick={setUrl}
       />
-      <RightText
-        text="A second brain that lets you focus on ***your*** science instead of computer science"
-        name="nbslogo.png"
-        alt="Microchip Diagram"
-        handleClick={setUrl}
-      />
+      <RightItalized handleClick={setUrl} />
       <ImagePopup img={imgUrl} turnOff={setUrl} />
       <TypewritterTitle seen={tTitleseen} setSeen={setTTitleSeen} />
       <LeftText
@@ -35,7 +34,7 @@ function HomePage() {
         textColor="cat-night-white"
         handleClick={setUrl}
       />
-      <LeftText
+      <RightText
         text="||||| with you for reasearch help, tech support, and debugging assistance"
         name="nbslogo.png"
         bgColor="cat-night-background"
@@ -51,7 +50,9 @@ function HomePage() {
         alt="Screenshot"
         handleClick={setUrl}
       />
-      <GithubLink></GithubLink>
+      <GithubLink />
+      <PlannedFeatures />
+      <AETitle seen={aETitleseen} setSeen={setAETitleSeen} />
     </div>
   );
 }

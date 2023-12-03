@@ -12,6 +12,7 @@ const defaultProps = {
   bgColor: "amber-50",
   textColor: "black",
 };
+
 function LeftText(propsIn: Props) {
   const props = { ...defaultProps, ...propsIn };
   return (

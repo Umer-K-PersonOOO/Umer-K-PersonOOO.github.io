@@ -23,7 +23,6 @@ function TypewritterTitle({ seen, setSeen }: Props) {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             // If the TypewritterTitle is in the viewport, trigger the fade-in effect
-            // setFadeIn(true);
             console.log("Made it");
             if (!seen) {
               setSeen(true);
@@ -33,7 +32,7 @@ function TypewritterTitle({ seen, setSeen }: Props) {
           }
         });
       },
-      { threshold: 0.5 } // Adjust the threshold as needed
+      { threshold: 0.99 } // Adjust the threshold as needed
     );
 
     // Start observing the TypewritterTitle component
@@ -67,7 +66,3 @@ function TypewritterTitle({ seen, setSeen }: Props) {
 }
 
 export default TypewritterTitle;
-
-// ${
-//     fadeIn ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[-1rem]"
-//   } transition-all duration-1000 ease-in-out
