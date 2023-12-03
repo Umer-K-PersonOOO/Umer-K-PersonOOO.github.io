@@ -8,6 +8,8 @@ import TypewritterTitle from "./TypewritterTitle";
 import RightItalized from "./RightItalized";
 import PlannedFeatures from "./PlannedFeatures";
 import AETitle from "./AETitle";
+import AEPlannedFeatures from "./AEPlannedFeatures";
+import AEText from "./AEText";
 
 function HomePage() {
   const [imgUrl, setUrl] = useState<string>("");
@@ -52,7 +54,9 @@ function HomePage() {
       />
       <GithubLink />
       <PlannedFeatures />
-      <AETitle seen={aETitleseen} setSeen={setAETitleSeen} />
+      <AETitle />
+      <AEText />
+      <AEPlannedFeatures />
     </div>
   );
 }
