@@ -38,8 +38,8 @@ const AEText: React.FC = () => {
             : "opacity-0 translate-y-[1rem]"
         } transition-all duration-1000 ease-in-out`}
       >
-        An Axon-Powered IDE that will drastically accelerate scipting, codebase
-        ???analytics???, and ??package?? development
+        An Axon-Powered IDE that will drastically accelerate scipting, codebase,
+        analysis, and package development
       </p>
     </div>
   );

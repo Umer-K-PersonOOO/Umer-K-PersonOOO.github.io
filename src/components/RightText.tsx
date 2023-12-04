@@ -30,7 +30,11 @@ function RightText(propsIn: Props) {
         />
       </div>
       <div className="basis-[63.8888888888%]">
-        <p className={`text-right text-${props.textColor}`}>{props.text}</p>
+        <p
+          className={`text-right xl:text-4xl font-light ml-10 text-${props.textColor}`}
+        >
+          {props.text}
+        </p>
       </div>
       <div className="shrink basis-[2.7777777777%]"></div>
     </div>

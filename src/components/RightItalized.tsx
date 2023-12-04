@@ -17,8 +17,8 @@ function RightItalized(props: Props) {
           }}
         />
       </div>
-      <div className="basis-[63.8888888888%]">
-        <p className={`text-right`}>
+      <div className="basis-[63.8888888888%] flex">
+        <p className={`text-right xl:text-4xl font-light ml-16`}>
           A second brain that lets you focus on{" "}
           <span className="italic font-bold">your</span> science instead of
           computer science

@@ -40,7 +40,7 @@ function HomePage() {
         handleClick={setUrl}
       />
       <RightText
-        text="||||| with you for reasearch help, tech support, and debugging assistance."
+        text="Works with you for reasearch help, tech support, and debugging assistance."
         name="nbslogo.png"
         bgColor="cat-night-background"
         alt="Screenshot"
@@ -62,7 +62,7 @@ function HomePage() {
       <AEPlannedFeatures />
       <AxonTitle />
       <LeftText
-        text="Putting the powr of Axon into the hands of scienctists and developers around the world."
+        text="Putting the power of Axon into the hands of scienctists and developers around the world."
         name="nbslogo.png"
         alt="Microchip Diagram"
         handleClick={setUrl}

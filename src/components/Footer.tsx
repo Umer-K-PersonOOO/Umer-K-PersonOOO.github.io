@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Footer: React.FC = () => {
   return (
-    <div className="grid justify-items-center grid-cols-3 bg-slate-500 py-4">
+    <div className="grid justify-items-center xl:grid-cols-3 grid-rows-3 bg-slate-500 py-4">
       <div className="my-1 ">
         {" "}
         <img
@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
           <Link to={"/contact-us"}>Contact Us!</Link>
         </span>
       </div>
-      <div className=" flex items-center">idk@gmail.com</div>
+      <div className=" flex items-center">srikarnikhil.kalidasu@gmail.com</div>
     </div>
   );
 };

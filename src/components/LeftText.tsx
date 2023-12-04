@@ -19,9 +19,10 @@ function LeftText(propsIn: Props) {
     <div
       className={`py-3 bg-${props.bgColor} flex flex-row overflow-y-visible overflow-x-clip items-center`}
     >
-      <div className="shrink basis-[2.7777777777%]"></div>
-      <div className="basis-[63.8888888888%]">
-        <p className={` text-${props.textColor} `}>{props.text}</p>
+      <div className="basis-[63.8888888888%] flex">
+        <p className={` text-${props.textColor} xl:text-4xl font-light mr-10`}>
+          {props.text}
+        </p>
       </div>
       <div className="basis-1/3">
         <img
