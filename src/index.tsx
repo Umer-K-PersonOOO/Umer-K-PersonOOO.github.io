@@ -5,7 +5,7 @@ import HomePage from "./components/HomePage";
 import reportWebVitals from "./reportWebVitals";
 import { Routes, Route } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
-
+import AboutPage from "./components/AboutPage";
 import App from "./components/HomePage";
 import Navbar from "./components/Navbar";
 import ContactPage from "./components/ContactPage";
@@ -18,7 +18,8 @@ root.render(
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<AboutPage />} />
+        <Route path="/axon" element={<HomePage />} />
         <Route path="/contact-us" element={<ContactPage />} />
       </Routes>
     </BrowserRouter>

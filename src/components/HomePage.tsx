@@ -3,7 +3,7 @@ import RightText from "./RightText";
 import Title from "./Title";
 import ImagePopup from "./ImagePopup";
 import GithubLink from "./GithubLink";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import TypewritterTitle from "./TypewritterTitle";
 import RightItalized from "./RightItalized";
 import PlannedFeatures from "./PlannedFeatures";
