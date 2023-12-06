@@ -12,6 +12,12 @@ module.exports = {
         "cat-night-background": "#0e1117",
         "cat-night-button": "#22262d",
         "cat-night-white": "#e7edf3",
+        "cat-wild-sand": "#f5f5f5",
+        "pallete-unsat-blue": "#8DA9C4",
+        "pallete-sat-blue": "#134074",
+        "pallete-dark-blue": "#13315C",
+        "pallete-navy": "#0B2545",
+        "pallete-beige": "#EEF4ED",
       },
       keyframes: {
         wiggle: {

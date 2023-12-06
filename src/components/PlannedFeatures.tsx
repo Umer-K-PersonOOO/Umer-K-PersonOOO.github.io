@@ -3,7 +3,7 @@
 function PlannedFeatures() {
   return (
     <div
-      className={` bg-slate-600 grid xl:grid-cols-4 sm:grid-rows-3 sm:gap-4 py-20`}
+      className={` bg-slate-600 grid xl:grid-cols-4 xl:grid-rows-1 sm:grid-rows-3 sm:gap-4 py-10`}
     >
       <div className="xl:col-span-1 flex justify-center items-center mx-2">
         <p className={`text-center text-white text-6xl  font-bold flex-1`}>

@@ -5,6 +5,7 @@ import ImagePopup from "./ImagePopup";
 import GithubLink from "./GithubLink";
 import { useEffect, useState } from "react";
 import TypewritterTitle from "./TypewritterTitle";
+import TerminalLeft from "./TerminalLeft";
 import RightItalized from "./RightItalized";
 import PlannedFeatures from "./PlannedFeatures";
 import AETitle from "./AETitle";
@@ -24,34 +25,34 @@ function HomePage() {
       <LeftText
         text="A personal AI assisstant designed to simplify and accelerate your
           reasearch, data analysis, and programming."
-        name="nbslogo.png"
+        name="axon_module.png"
+        bgColor="bg-cat-wild-sand"
         alt="Microchip Diagram"
         handleClick={setUrl}
       />
       <RightItalized handleClick={setUrl} />
-      <ImagePopup img={imgUrl} turnOff={setUrl} />
       <TypewritterTitle seen={tTitleseen} setSeen={setTTitleSeen} />
       <LeftText
         text="Validates your commands to catch your mistakes."
         name="nbslogo.png"
         alt="Screenshot"
-        bgColor="cat-night-background"
-        textColor="cat-night-white"
+        bgColor="bg-cat-night-background"
+        textColor="text-cat-night-white"
         handleClick={setUrl}
       />
-      <RightText
+      <TerminalLeft
         text="Works with you for reasearch help, tech support, and debugging assistance."
-        name="nbslogo.png"
-        bgColor="cat-night-background"
+        name="HelpReasearch.png"
+        bgColor="bg-cat-night-background"
         alt="Screenshot"
-        textColor="cat-night-white"
+        textColor="text-cat-night-white"
         handleClick={setUrl}
       />
       <LeftText
         text="Performes natural language tasks by generating Python code."
-        name="nbslogo.png"
-        bgColor="cat-night-background"
-        textColor="cat-night-white"
+        name="python_execute.png"
+        bgColor="bg-cat-night-background scale-[1]"
+        textColor="text-cat-night-white"
         alt="Screenshot"
         handleClick={setUrl}
       />
@@ -63,34 +64,40 @@ function HomePage() {
       <AxonTitle />
       <LeftText
         text="Putting the power of Axon into the hands of scienctists and developers around the world."
-        name="nbslogo.png"
+        name="these_hands.png"
         alt="Microchip Diagram"
         handleClick={setUrl}
+        bgColor="bg-gray-600" // Add to tailwind config
+        textColor="text-cat-night-white"
       />
       <RightText
         text="Develop your own apps that leverage Axon's full suite of services."
-        name="nbslogo.png"
-        bgColor="cat-night-background"
+        name="mobile_make.svg"
+        bgColor="bg-stone-200"
         alt="Screenshot"
-        textColor="cat-night-white"
+        textColor="text-black"
         handleClick={setUrl}
+        passIn="w-60"
       />
       <LeftText
         text="Supporting a thriving open source community with free access of API services and Axon-Powered apps for anyone with an Axon license."
-        name="nbslogo.png"
+        name="api.png"
+        bgColor="bg-gray-600"
+        textColor="text-cat-night-white"
         alt="Microchip Diagram"
         handleClick={setUrl}
       />
       <RightText
         text="Connecting software developers and companies with global reasearch labs in the Axon Marketplace. "
-        name="nbslogo.png"
-        bgColor="cat-night-background"
+        name="people.png"
+        bgColor="bg-stone-200"
         alt="Screenshot"
-        textColor="cat-night-white"
+        textColor="text-black"
         handleClick={setUrl}
       />
       <VoteText />
       <Footer />
+      <ImagePopup img={imgUrl} turnOff={setUrl} />
     </div>
   );
 }

@@ -7,22 +7,24 @@ import Title from "./Title";
 import AxonProduct from "./AxonProduct";
 import Footer from "./Footer";
 import { useState } from "react";
+import ImagePopup from "./ImagePopup";
 
 const AboutPage: React.FC = () => {
   const [imgUrl, setUrl] = useState<string>("");
   return (
     <div className="">
       <RightText
-        text="Despite all our advances in computing, computers are still fundementally unintuitive"
-        name="nbslogo.png"
+        text="Despite all our advances in computing, computers are still fundamentally unintuitive"
+        name="Diagram_be_hard.png"
+        bgColor="bg-slate-200"
         alt="Demonstration"
         handleClick={setUrl}
       ></RightText>
       <LeftText
         text="This probelm is exaserbated in the computational sciences fields"
-        name="nbslogo.png"
+        name="Shell_hard.png"
         alt="Current software"
-        bgColor="cat-night-background"
+        bgColor="bg-slate-100"
         textColor="cat-night-white"
         handleClick={setUrl}
       />
@@ -30,6 +32,7 @@ const AboutPage: React.FC = () => {
       <RightText
         text="We improve computer useability with Artificial Intelligence and neural networks"
         name="nbslogo.png"
+        bgColor="bg-slate-500"
         alt="Neural Computer Interfaces"
         handleClick={setUrl}
       ></RightText>
@@ -38,6 +41,7 @@ const AboutPage: React.FC = () => {
       {/* Product RoadMap component */}
       {/* Make it a socials footer */}
       <Footer />
+      <ImagePopup img={imgUrl} turnOff={setUrl} />
     </div>
   );
 };

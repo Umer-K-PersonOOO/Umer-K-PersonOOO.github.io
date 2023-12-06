@@ -30,7 +30,7 @@ const VoteText: React.FC = () => {
   }, [hasAppeared]);
 
   return (
-    <div ref={sectionRef} className="py-16">
+    <div ref={sectionRef} className="py-16 bg-stone-400">
       <p
         className={`text-2xl font-bold text-center ${
           isVisible

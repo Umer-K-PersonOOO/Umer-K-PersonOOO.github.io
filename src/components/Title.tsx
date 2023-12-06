@@ -14,7 +14,7 @@ function Title() {
   }, []);
 
   return (
-    <div className="bg-slate-100 py-40">
+    <div className="bg-slate-200 py-40">
       <h1
         className={`text-8xl font-bold text-center ${
           fadeIn ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[-1rem]"

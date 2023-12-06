@@ -34,7 +34,8 @@ function ImagePopup({ img, turnOff }: Props) {
       className="fixed inset-0 bg-black bg-opacity-30 flex justify-center items-center"
     >
       <img
-        className={` ${
+        className={`object-scale-down w-[1000px] ${
+          // NOT DYNAMIC
           play ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[-1rem]"
         } transition-all duration-200 ease-in-out`}
         src={`../static/${img}`}

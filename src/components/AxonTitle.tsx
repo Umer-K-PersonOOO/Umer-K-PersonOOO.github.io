@@ -30,9 +30,9 @@ const AxonTitle: React.FC = () => {
   }, [hasAppeared]);
 
   return (
-    <div ref={sectionRef} className="bg-slate-100 py-24">
+    <div ref={sectionRef} className="bg-pallete-unsat-blue py-24">
       <p
-        className={`text-8xl font-bold text-center ${
+        className={`text-8xl font-bold text-center text-gray-900 ${
           isVisible
             ? "opacity-100 translate-x-0"
             : "opacity-0 translate-x-[-1rem]"
